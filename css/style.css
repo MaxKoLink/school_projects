@@ -16,8 +16,10 @@ body {
 a {
   text-decoration: none;
 }
-ul {
+ul,
+li {
   list-style-type: none;
+  padding: 0;
 }
 .content {
   max-width: 1200px;
@@ -37,7 +39,7 @@ h3 {
 /* Header */
 #header {
   height: 100vh;
-  background-image: url(/img/header.jpg);
+  background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -238,4 +240,38 @@ h3 {
   box-shadow: 0px 0px 0px 10px white;
   border-radius: 100px;
   overflow: hidden;
+}
+/* section price */
+#price {
+  margin: 100px 0 100px 0;
+}
+#price .content h2 {
+  text-align: center;
+  margin: 0px 0 100px 0;
+}
+table {
+  margin: 0 auto;
+  width: 80%;
+  border-spacing: 0px 20px;
+}
+tbody {
+  color: #4d4d4d;
+}
+tbody li:first-child {
+  font-weight: bold;
+}
+td {
+  margin-bottom: 40px;
+  text-align: center;
+  border-top: 1px dashed steelblue;
+  border-bottom: 1px dashed steelblue;
+}
+tr li {
+  text-align: center;
+}
+td button {
+  background: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
 }
