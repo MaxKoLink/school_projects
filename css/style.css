@@ -243,7 +243,8 @@ h3 {
 }
 /* section price */
 #price {
-  margin: 100px 0 100px 0;
+  padding: 100px 0 100px 0;
+  background-color: #f7f7f7;
 }
 #price .content h2 {
   text-align: center;
@@ -257,8 +258,12 @@ table {
 tbody {
   color: #4d4d4d;
 }
+
 tbody li:first-child {
   font-weight: bold;
+}
+tbody li:not(:first-child)::before {
+  content: "•";
 }
 td {
   margin-bottom: 40px;
@@ -274,4 +279,43 @@ td button {
   padding: 20px;
   border-radius: 5px;
   border: 1px solid steelblue;
+}
+
+/* section refs */
+#refs .content {
+  display: flex;
+  padding: 100px 0 100px 0;
+  justify-content: space-around;
+}
+
+.refs-card blockquote {
+  padding: 30px;
+  color: white;
+  background-color: #4d4d4d;
+  max-width: 400px;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+}
+.refs-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  float: left;
+  vertical-align: top;
+}
+.refs-card figure {
+  width: 300px;
+}
+.refs-card figure h3 {
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.refs-card blockquote span::before {
+  content: "\2E42";
+  font-size: 60px;
+  color: steelblue;
+  position: absolute;
+  top: 1px;
+  left: 5px;
 }
