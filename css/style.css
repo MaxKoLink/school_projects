@@ -1,0 +1,243 @@
+/*
+ * Login: xkokov00
+ *
+ * Doplnte sve reseni.
+ *
+ * Nezapomente pridat strucne hromadne komentare pro pravidla jednotlivych sekci
+ * a pro netrivialni useky kodu (napr. bubliny v sekci #refs)
+ */
+
+/* Global settings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+/* Global settings end */
+
+/* Header */
+#header {
+  height: 100vh;
+  background-image: url(/img/header.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0% 60%;
+  padding-top: 10px;
+}
+
+#logo {
+  font-size: 25px;
+  color: steelblue;
+  float: left;
+}
+#logo a {
+  font-size: 25px;
+  color: steelblue;
+  text-decoration: none;
+  font-family: Special Elite;
+  padding-left: 10px;
+}
+#contacts {
+  color: steelblue;
+  text-align: end;
+  padding-top: 10px;
+}
+#contacts span,
+#contacts a {
+  color: #bfbfbf;
+  font-size: 14px;
+}
+#mail {
+  margin-left: 10px;
+}
+#phone i,
+#mail i {
+  color: steelblue;
+  padding-right: 5px;
+}
+#networks {
+  text-align: end;
+  float: right;
+  margin-top: 20px;
+}
+#networks span i {
+  color: steelblue;
+  font-size: 25px;
+  margin-left: 10px;
+}
+#navigation {
+}
+#navigation ul {
+  display: flex;
+  padding-left: 0;
+}
+#navigation li {
+  font-size: 13px;
+  margin-right: 0.05em;
+  padding: 5px 15px;
+  border: 1px;
+}
+#navigation a {
+  color: #bfbfbf;
+  text-transform: uppercase;
+}
+#header-title h1 {
+  color: white;
+  padding-top: 33%;
+  padding-bottom: 20px;
+}
+
+#get-started a {
+  font-size: 18px;
+  color: #4d4d4d;
+  padding: 20px;
+  border: 2px solid #4d4d4d;
+  border-radius: 15px;
+}
+/* section services */
+#services .content h2,
+#services .content p {
+  text-align: center;
+}
+
+#services .content p {
+  font-size: 18px;
+  color: #bfbfbf;
+  line-height: 1.7;
+}
+#services .content .services-column p {
+  font-size: 14px;
+}
+#services .content div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services-column {
+  margin: 80px;
+}
+.services-column p {
+  font-size: 14px;
+}
+
+.services-card {
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 0px 20px #4d4d4d;
+  border-radius: 5px;
+  padding: 20px;
+}
+.services-card h3 {
+  width: 300px;
+}
+
+.services-card img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  display: block;
+}
+
+/* about-item */
+#about {
+  background-color: #f7f7f7;
+  padding: 100px 0 100px 0px;
+}
+.about-item img {
+  width: 500px;
+  height: 290px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.about-item img:hover {
+  transform: scale(1.2);
+}
+.content .about-item:first-child img {
+  float: left;
+  margin: 0px 80px 40px 0px;
+}
+.content .about-item:last-child img {
+  float: right;
+  margin: 40px 0px 40px 80px;
+}
+.about-item p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #bfbfbf;
+}
+
+/* team */
+#team {
+  text-align: center;
+  padding: 100px;
+}
+#team .content h2 {
+  display: block;
+  width: 100%;
+  margin-bottom: 100px;
+}
+#team .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-card img {
+  width: 270px;
+  height: 270px;
+}
+.team-card {
+  width: 270px;
+  box-shadow: 0px 0px 20px #4d4d4d;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* stats */
+#stats {
+  border-top: 2px dashed #bfbfbf;
+  padding: 100px 0 100px 0;
+}
+#stats .content {
+  display: flex;
+  justify-content: space-around;
+}
+.stats-card {
+  text-align: center;
+  width: 300px;
+  background-color: #4d4d4d;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+}
+.stats-card i {
+  font-size: 32px;
+  color: steelblue;
+  position: relative;
+  bottom: 15px;
+  box-shadow: 0px 0px 0px 10px white;
+  border-radius: 100px;
+  overflow: hidden;
+}
